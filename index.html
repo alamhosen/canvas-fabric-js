@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Canvas</title>
+</head>
+
+<body>
+  <div class="container text-center">
+    <h2 class="m-5 fs-1">Welcome to my canvas</h2>
+    
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse d-flex justify-content-center align-items-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <label class="fs-5" for="uploader">Select Image</label>
+              <input type="file" id="uploader">
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-outline-primary">Download</button>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-outline-primary mx-3" onclick="clearCanvas(canvas)">Clear</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+     <!-- navbar end -->
+
+    <!-- canvas start -->
+    <div class="row mt-5 d-inline-block justify-content-center">
+      <canvas class="border" id="canvas"></canvas>
+    </div>
+    <!-- canvas end -->
+  </div>
+
+  <!-- scripts start -->
+  <script src="./lib/fabric.min.js"></script>
+  <script src="./JS/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- scripts end -->
+</body>
+
+</html>
